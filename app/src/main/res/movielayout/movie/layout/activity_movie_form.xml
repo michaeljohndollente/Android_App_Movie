@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.movie.MovieFormActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/tboxTitle"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/tboxDescription"
+        android:layout_width="210dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/tboxTitle"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="@+id/tboxTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tboxTitle"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/tboxRelease"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="YYYY-MM-DD"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/tboxDescription"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/tboxDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tboxDescription" />
+
+    <ImageView
+        android:id="@+id/imgMovieSelect"
+        android:layout_width="160dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="208dp"
+        app:layout_constraintEnd_toStartOf="@+id/tboxDescription"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@color/black" />
+
+    <Spinner
+        android:id="@+id/sprGenre"
+        android:layout_width="210dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tboxRelease"
+        app:layout_constraintStart_toStartOf="@+id/tboxRelease"
+        app:layout_constraintTop_toBottomOf="@+id/tboxRelease" />
+
+    <Spinner
+        android:id="@+id/sprProd"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/sprGenre"
+        app:layout_constraintStart_toStartOf="@+id/sprGenre"
+        app:layout_constraintTop_toBottomOf="@+id/sprGenre" />
+
+    <Button
+        android:id="@+id/btnSelectImgM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Upload"
+        app:layout_constraintEnd_toStartOf="@+id/tboxRelease"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMovieSelect"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnSaveMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="@+id/sprProd"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sprProd"
+        app:layout_constraintTop_toBottomOf="@+id/sprProd"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

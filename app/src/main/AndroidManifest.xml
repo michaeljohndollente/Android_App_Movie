@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android_movie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android_Movie"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".ui.role.RoleFormActivity"></activity>
+        <activity android:name=".ui.login.RegisterActivity" />
+        <activity android:name=".ui.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.movie.MovieFormActivity" />
+        <activity
+            android:name=".ui.actor.ActorFormActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ui.producer.ProducerFormActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ui.genre.GenreFormActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Android_Movie.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

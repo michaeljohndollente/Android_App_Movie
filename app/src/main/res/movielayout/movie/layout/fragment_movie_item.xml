@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMovie"
+        android:layout_width="match_parent"
+        android:layout_height="510dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="#B4AEE8">
+
+            <ImageView
+                android:id="@+id/imgMovie"
+                android:layout_width="327dp"
+                android:layout_height="222dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="Movie Title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgMovie" />
+
+            <TextView
+                android:id="@+id/txtMDesc"
+                android:layout_width="228dp"
+                android:layout_height="152dp"
+                android:layout_marginTop="8dp"
+                android:text="Description"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.235"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+                app:layout_constraintVertical_bias="0.05" />
+
+            <TextView
+                android:id="@+id/txtRelease"
+                android:layout_width="90dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="16dp"
+                android:text="Release"
+                android:textAlignment="textEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.404"
+                app:layout_constraintStart_toEndOf="@+id/txtMDesc"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+            <TextView
+                android:id="@+id/txtProName"
+                android:layout_width="101dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="40dp"
+                android:text="Producer"
+                android:textAlignment="textEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.222"
+                app:layout_constraintStart_toEndOf="@+id/txtMDesc"
+                app:layout_constraintTop_toBottomOf="@+id/txtRelease" />
+
+            <TextView
+                android:id="@+id/txtGenName"
+                android:layout_width="82dp"
+                android:layout_height="27dp"
+                android:text="Genre"
+                android:textAlignment="textEnd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintStart_toEndOf="@+id/txtMDesc"
+                app:layout_constraintTop_toBottomOf="@+id/txtProName"
+                app:layout_constraintVertical_bias="0.211" />
+
+            <ImageButton
+                android:id="@+id/btnEditMovie"
+                android:layout_width="38dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/ic_baseline_edit_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtGenName" />
+
+            <ImageButton
+                android:id="@+id/btnDelMovie"
+                android:layout_width="38dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/ic_baseline_delete_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.233"
+                app:layout_constraintStart_toEndOf="@+id/btnEditMovie"
+                app:layout_constraintTop_toBottomOf="@+id/txtGenName"
+                app:layout_constraintVertical_bias="0.25" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

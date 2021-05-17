@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_movie"
+            android:icon="@drawable/ic_baseline_movie_24"
+            android:title="@string/menu_movie" />
+        <item
+            android:id="@+id/nav_actor"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/menu_actor"/>
+        <item
+            android:id="@+id/nav_genre"
+            android:icon="@drawable/ic_baseline_local_movies_24"
+            android:title="@string/menu_genre"/>
+        <item
+        android:id="@+id/nav_producer"
+        android:icon="@drawable/ic_baseline_grade_24"
+        android:title="@string/menu_producer" />
+        <item
+            android:id="@+id/nav_role"
+            android:icon="@drawable/ic_baseline_people_24"
+            android:title="@string/menu_role" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

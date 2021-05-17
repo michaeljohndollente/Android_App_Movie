@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp">
+
+        <ImageView
+            android:id="@+id/imgShowMovie"
+            android:layout_width="285dp"
+            android:layout_height="211dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@color/black" />
+
+        <TextView
+            android:id="@+id/txtShowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgShowMovie" />
+
+        <TextView
+            android:id="@+id/txtShowDesc"
+            android:layout_width="195dp"
+            android:layout_height="169dp"
+            android:text="Description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.324"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtShowTitle"
+            app:layout_constraintVertical_bias="0.069" />
+
+        <TextView
+            android:id="@+id/txtShowRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="8dp"
+            android:text="Release"
+            android:textAlignment="textEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.194"
+            app:layout_constraintStart_toEndOf="@+id/txtShowDesc"
+            app:layout_constraintTop_toBottomOf="@+id/txtShowTitle" />
+
+        <TextView
+            android:id="@+id/txtShowGenre"
+            android:layout_width="61dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:text="Genre"
+            android:textAlignment="textEnd"
+            app:layout_constraintEnd_toEndOf="@+id/txtShowProd"
+            app:layout_constraintHorizontal_bias="0.785"
+            app:layout_constraintStart_toEndOf="@+id/txtShowDesc"
+            app:layout_constraintTop_toBottomOf="@+id/txtShowProd" />
+
+        <TextView
+            android:id="@+id/txtShowProd"
+            android:layout_width="58dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:text="Producer"
+            android:textAlignment="textEnd"
+            app:layout_constraintEnd_toEndOf="@+id/txtShowRelease"
+            app:layout_constraintHorizontal_bias="0.806"
+            app:layout_constraintStart_toEndOf="@+id/txtShowDesc"
+            app:layout_constraintTop_toBottomOf="@+id/txtShowRelease" />
+
+        <TextView
+            android:id="@+id/txtCast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Casts"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtShowDesc"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

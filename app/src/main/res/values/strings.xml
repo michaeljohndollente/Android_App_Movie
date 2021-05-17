@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MFlix</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="URLProject">http://192.168.1.15:8000/api/</string>
+    <string name="URLAuth">http://192.168.1.15:8000/api/auth/</string>
+    <string name="URLImage">http://192.168.1.15:8000/</string>
+
+    <string name="menu_actor">Actors</string>
+    <string name="menu_genre">Genre</string>
+    <string name="menu_movie">Movies</string>
+    <string name="menu_producer">Producers</string>
+    <string name="menu_role">Roles</string>
+    <string name="menu_logout">Logout</string>
+    <string name="image_viewer">Picture</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

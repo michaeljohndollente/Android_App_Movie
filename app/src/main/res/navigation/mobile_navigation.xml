@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_movie">
+
+    <fragment
+        android:id="@+id/nav_movie"
+        android:name="com.example.android_movie.ui.movie.MovieFragment"
+        android:label="@string/menu_movie"
+        tools:layout="@layout/fragment_movie" />
+
+    <fragment
+        android:id="@+id/nav_genre"
+        android:name="com.example.android_movie.ui.genre.GenreFragment"
+        android:label="@string/menu_genre"
+        tools:layout="@layout/fragment_genre" />
+    <fragment
+        android:id="@+id/nav_actor"
+        android:name="com.example.android_movie.ui.actor.ActorFragment"
+        android:label="@string/menu_actor"
+        tools:layout="@layout/fragment_actor" />
+
+    <fragment
+        android:id="@+id/nav_producer"
+        android:name="com.example.android_movie.ui.producer.ProducerFragment"
+        android:label="@string/menu_producer"
+        tools:layout="@layout/fragment_producer" />
+
+    <fragment
+        android:id="@+id/nav_role"
+        android:name="com.example.android_movie.ui.role.RoleFragment"
+        android:label="@string/menu_role"
+        tools:layout="@layout/fragment_role" />
+
+</navigation>
